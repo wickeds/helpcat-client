@@ -1,0 +1,44 @@
+﻿<Controls:MetroWindow x:Class="helpcat.InformationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:loc="clr-namespace:helpcat.Localization"
+        Title="{x:Static loc:Strings.CustomerInformation}" Height="Auto" Width="Auto" SizeToContent="WidthAndHeight" MinWidth="300" ResizeMode="CanMinimize">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colours.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Blue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+        <StackPanel>
+            <TextBlock Margin="10" LineHeight="24" LineStackingStrategy="BlockLineHeight">
+                <TextBlock Text="{x:Static loc:Strings.Browser}"/>:
+                <TextBlock x:Name="browserTextBlock" Text="Chrome"/>
+                <LineBreak/>
+                <TextBlock Text="{x:Static loc:Strings.BrowserVersion}"/>:
+                <TextBlock x:Name="browserVersionTextBlock" Text="21.0"/>
+                <LineBreak/>
+                <TextBlock Text="{x:Static loc:Strings.OperatingSystem}"/>:
+                <TextBlock x:Name="operatingSystemTextBlock" Text="Windows NT 6.1"/>
+                <LineBreak/>
+                <TextBlock Text="{x:Static loc:Strings.Location}"/>:
+                <TextBlock x:Name="locationTextBlock" Text="Ficken, Österreich"/>
+                <LineBreak/>
+                <TextBlock Text="{x:Static loc:Strings.IpAddress}"/>:
+                <TextBlock x:Name="ipAddressTextBlock" Text="127.0.0.1"/>
+                <LineBreak/>
+                <TextBlock Text="{x:Static loc:Strings.Hostname}"/>:
+                <TextBlock x:Name="hostnameTextBlock" Text="localhost"/>
+                <LineBreak/>
+                <TextBlock Text="{x:Static loc:Strings.UserAgent}"/>:
+                <TextBlock x:Name="userAgentTextBlock" Text="blah"/>
+            </TextBlock>
+        </StackPanel>
+    </Grid>
+</Controls:MetroWindow>
