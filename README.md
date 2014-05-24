@@ -1,4 +1,4 @@
-#helpcat
+#helpcat (client)
 ##Information
 ### Design
 Remember that horrible support software that looked like it came straight from 1995? Yeah, with helpcat that's no more. We pay attention to design - Metro UI fits easily. This modern art, which offers so many options. Unfortunately, with the disadvantage that our client only runs with Windows Vista with .NET Framework 4.5 and higher.
